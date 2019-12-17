@@ -123,7 +123,12 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  let output = [];
+  arr.forEach(element => {
+    if(element%3 == 0 && element%5 == 0)
+    if(element%3 == 0)
+    if(element%5 == 0)
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
