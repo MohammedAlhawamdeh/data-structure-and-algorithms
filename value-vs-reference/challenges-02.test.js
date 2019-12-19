@@ -49,6 +49,7 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
+  (obj.yearBorn = year);
   // Solution code here...
 };
 
@@ -86,6 +87,7 @@ console.log(a) prints [1, 2, 3, 4]
 
 const append = (arr1, arr2) => {
   // Solution code here...
+  arr1.push(...arr2);
 
 };
 
