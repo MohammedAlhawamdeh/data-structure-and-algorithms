@@ -22,7 +22,7 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 
 const alphabetize = (arr) => {
   // Solution code here...
-//   arr.sort((a, b) => a.charCodeAt(0) - b.charCodeAt(0));
+  return arr.sort((a, b) => a.charCodeAt(0) - b.charCodeAt(0));
 };
 
 
@@ -34,6 +34,7 @@ Write a function named sortByLength that takes in an array of strings and return
 
 const sortByLength = (arr) => {
   // Solution code here...
+  return arr.sort((a, b) => a.length - b.length);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,6 +47,10 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 
 const alphabetizeBetter = (arr) => {
   // Solution code here...
+  arr.sort((a, b) => {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,6 +68,8 @@ Here is an example of the input:
 
 const sortByPrice = (arr) => {
   // Solution code here...
+  return arr.sort((a, b) => a.price - b.price);
+ 
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,6 +82,8 @@ For example, [1, 14, 0.2, -281, 54782] is only correctly sorted in that order.
 
 const sortNumbersByLength = (arr) => {
   // Solution code here...
+  return  arr.sort((a, b) => a.toString().length - b.toString().length);
+
 };
 
 /*-----------------------------------------------------------------------------------------------
@@ -97,6 +106,7 @@ const people = [
 
 const sortPeople = (arr) => {
   // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
