@@ -57,6 +57,7 @@ Return the modified array.
 
 const removeOne = (num, arr) => {
   // Solution code here...
+  
 };
 
 const removeElements = (arr, callback) => {
@@ -71,6 +72,10 @@ Write a function named removeWithForEach that produces the same output as challe
 
 const removeWithForEach = (arr, callback) => {
   // Solution code here...
+  arr.forEach((num) => {
+    callback(num, arr);
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -85,7 +90,14 @@ This anonymous function should accept up to three arguments: the element, the in
 
 const removeWithAnon = (arr) => {
   // Solution code here...
+  arr.forEach((element, index, arr) => {
+    if (element % 3 === 2) {
+      arr.pop();
+    }
+  });
+  return arr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -106,6 +118,13 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+  let groceryList = [];
+  availableItems.forEach((item) => {
+    if (item.available === true) {
+      groceryList.push(item.name);
+    }
+  });
+  return groceryList;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -123,12 +142,19 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  let output = [];
-  arr.forEach(element => {
-    if(element%3 == 0 && element%5 == 0)
-    if(element%3 == 0)
-    if(element%5 == 0)
-  }
+  arr.forEach((num) => {
+    if (num % 3 === 0 && num % 5 === 0) {
+      output.push('Fizz Buzz');
+    } else if (num % 3 === 0) {
+      output.push('Fizz');
+    } else if (num % 5 === 0) {
+      output.push('Buzz');
+    } else {
+      output.push(num);
+    }
+  });
+  console.log(output);
+  return output;
 };
 
 /* ------------------------------------------------------------------------------------------------
