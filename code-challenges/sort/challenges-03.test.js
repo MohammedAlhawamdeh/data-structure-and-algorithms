@@ -48,7 +48,7 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 const alphabetizeBetter = (arr) => {
   // Solution code here...
   arr.sort((a, b) => {
-    return a.toLowerCase().localeCompare(b.toLowerCase());
+    return a.toLowerCase().localeCompare(b.toLowerCase());// using a string method (localcompare) which is to local compare the two strings we have.
   });
   return arr;
 };
@@ -106,7 +106,7 @@ const people = [
 
 const sortPeople = (arr) => {
   // Solution code here...
-  
+  //pretty difficult for me.... sorry
 };
 
 /* ------------------------------------------------------------------------------------------------
