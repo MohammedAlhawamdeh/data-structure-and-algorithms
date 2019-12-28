@@ -49,8 +49,8 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
-  (obj.yearBorn = year);
   // Solution code here...
+  (obj.yearBorn = year);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,6 +68,9 @@ console.log(people[1].isAuthor) prints true
 
 const setStatusAsAuthor = (people) => {
   // Solution code here...
+  people.forEach(element => {
+    element.isAuthor = true;
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -87,7 +90,8 @@ console.log(a) prints [1, 2, 3, 4]
 
 const append = (arr1, arr2) => {
   // Solution code here...
-  arr1.push(...arr2);
+  // used MDN resource here // //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push#Merging_two_arrays
+  arr1.push.apply(arr1, arr2);
 
 };
 
