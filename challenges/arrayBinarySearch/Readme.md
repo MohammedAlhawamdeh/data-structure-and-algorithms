@@ -8,7 +8,7 @@ function called BinarySearch which takes in 2 parameters: a sorted array and the
 our approuch is hard coding the the solution by using loops and conditions, the Big O(log n).
 
 ## Solution
-<!-- Embedded whiteboard image -->
+https://ibb.co/fSN8PtH
 
 ## Group Names : 
 Mohammed Alhawamdeh
