@@ -5,3 +5,5 @@ The Purpose of this repo is just to solve challenges throughout the course, this
 1- [array-reverse](https://github.com/MohammedAlhawamdeh/data-structure-and-algorithms/blob/master/challenges/arrayShift/array-reverse.js)
 
 2- [binary-search](https://github.com/MohammedAlhawamdeh/data-structure-and-algorithms/blob/array-binary-search/challenges/arrayBinarySearch/array-binary-search.js)
+
+3- [Matrix]()

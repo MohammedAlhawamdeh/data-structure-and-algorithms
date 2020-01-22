@@ -1,7 +1,7 @@
-const arr = [4,8,15,16,23,42]
-const key = 15
-
+'use strict'
+let arrayBinarySearch = module.exports ={}
 function BinarySearch(arr,key){
+  const arr = [];
   let index = 0
   for(let i =0;i<arr.length;i++){
     if(key === arr[i]){
@@ -14,3 +14,4 @@ function BinarySearch(arr,key){
 return index
 }
 BinarySearch(arr,key) 
+
